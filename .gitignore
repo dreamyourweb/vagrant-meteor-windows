@@ -167,3 +167,7 @@ Berksfile.lock
 
 # Vagrant
 .vagrant
+
+mozartadmin
+orikami
+smell
