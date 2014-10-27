@@ -5,10 +5,11 @@ Vagrant.configure("2") do |config|
 
 
   # The vbguest and omnibus plugins should make other boxes possible.
-  config.vm.box = "saucy64"
+  config.vm.box = "utopic64"
 
-  config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/saucy/current/saucy-server-cloudimg-amd64-vagrant-disk1.box"
+  config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/utopic/current/utopic-server-cloudimg-amd64-vagrant-disk1.box"
 
+  config.vm.network :public_network
   config.vm.network :forwarded_port, guest: 3000, host: 3000
 
   config.berkshelf.enabled = true
